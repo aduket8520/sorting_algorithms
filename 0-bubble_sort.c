@@ -10,14 +10,14 @@
  */
 void swap_integers(int *a, int *b)
 {
-    int temp;
+	int temp;
 
-    if (a && b)
-    {
-        temp = *a;
-        *a = *b;
-        *b = temp;
-    }
+	if (a && b)
+	{
+		temp = *a;
+		*a = *b;
+		*b = temp;
+	}
 }
 
 
@@ -29,23 +29,23 @@ void swap_integers(int *a, int *b)
 */
 void bubble_sort(int *array, size_t size)
 {
-    size_t i, j;
+	size_t i, j;
 
-    if (size <= 1)
-        return;
+	if (size <= 1)
+		return;
 
-    for (i = 0; i < size - 1; i++)
-    {
-        for (j = 0; j < size - i - 1; j++)
-        {
-            if (array[j] > array[j + 1])
-            {
+	for (i = 0; i < size - 1; i++)
+	{
+		for (j = 0; j < size - i - 1; j++)
+		{
+			if (array[j] > array[j + 1])
+			{
 				swap_integers(&array[j], &array[j + 1]);
-            }
-            print_array(array, size);
-        }
+				print_array(array, size);
+			}
+		}
 
-        
-    }
+
+	}
 }
 
