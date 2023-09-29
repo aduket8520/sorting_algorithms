@@ -21,7 +21,6 @@ void swap_integers(int *a, int *b)
 }
 
 
-
 /**
  * bubble_sort - sort an array using the bubble sort algorithm
  * @array: the array
@@ -44,8 +43,6 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-
-
 	}
 }
 
